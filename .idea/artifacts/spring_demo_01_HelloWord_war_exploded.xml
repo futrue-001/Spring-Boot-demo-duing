@@ -5,7 +5,7 @@
       <element id="javaee-facet-resources" facet="spring-demo-01-HelloWord/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="spring-demo-01-HelloWord" />
+          <element id="module-output" name="spring-Boot-demo-01-HelloWord" />
         </element>
       </element>
     </root>
