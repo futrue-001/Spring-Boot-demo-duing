@@ -15,6 +15,8 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
+
+    <!-- 配置类需要的jar文件 -->
  <dependencies>
      <dependency>
          <groupId>org.springframework.boot</groupId>

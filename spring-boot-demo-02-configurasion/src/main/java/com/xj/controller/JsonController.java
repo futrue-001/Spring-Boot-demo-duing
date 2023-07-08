@@ -1,7 +1,11 @@
 package com.xj.controller;
 
 import com.xj.bean.Food;
+import com.xj.bean.Noodles;
+import com.xj.bean.Soup;
 import com.xj.config.FoodConfig;
+import com.xj.config.NoodlesConfig;
+import com.xj.config.SoupConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -37,6 +41,26 @@ public class JsonController {
         food.setMeat(foodConfig.getMeat());
         food.setRice(foodConfig.getRice());
         return food;
+    }
+
+    @Autowired
+    private SoupConfig soupConfig;
+    @RequestMapping("/soup")
+    public Soup soup(){
+        Soup soup = new Soup();
+        soup.setTomato(soupConfig.getTomato());
+        soup.setEgg(soupConfig.getEgg());
+        return soup;
+    }
+
+    @Autowired
+    private NoodlesConfig noodlesConfig;
+    @RequestMapping("/noodles")
+    public Noodles noodles(){
+        Noodles noodles = new Noodles();
+        noodles.setMeat(noodlesConfig.getMeat());
+        noodles.setShallot(noodlesConfig.getShallot());
+        return noodles;
     }
 
 

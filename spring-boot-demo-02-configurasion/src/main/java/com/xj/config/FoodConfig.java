@@ -1,6 +1,7 @@
 package com.xj.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
 
 
 /**
@@ -9,8 +10,11 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  *      food.meat=烤肉
  *      food.rice=拌饭
  *
- * 配置了@ConfigurationProperties注解后需要在springBoot入口类上添加 @EnableConfigurationProperties注解 让springBoot进行处理
+ * 配置了@ConfigurationProperties注解后
+ *       需要在springBoot入口类上添加 @EnableConfigurationProperties注解 让spring管理
+ *      或者添加@Configuration注解
  */
+@Configuration
 @ConfigurationProperties(prefix = "food")
 public class FoodConfig {
     //Food类的配置类

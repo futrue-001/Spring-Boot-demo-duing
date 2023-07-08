@@ -4,6 +4,16 @@
       "name": "food",
       "type": "com.xj.config.FoodConfig",
       "sourceType": "com.xj.config.FoodConfig"
+    },
+    {
+      "name": "noodles",
+      "type": "com.xj.config.NoodlesConfig",
+      "sourceType": "com.xj.config.NoodlesConfig"
+    },
+    {
+      "name": "soup",
+      "type": "com.xj.config.SoupConfig",
+      "sourceType": "com.xj.config.SoupConfig"
     }
   ],
   "properties": [
@@ -16,6 +26,26 @@
       "name": "food.rice",
       "type": "java.lang.String",
       "sourceType": "com.xj.config.FoodConfig"
+    },
+    {
+      "name": "noodles.meat",
+      "type": "java.lang.String",
+      "sourceType": "com.xj.config.NoodlesConfig"
+    },
+    {
+      "name": "noodles.shallot",
+      "type": "java.lang.String",
+      "sourceType": "com.xj.config.NoodlesConfig"
+    },
+    {
+      "name": "soup.egg",
+      "type": "java.lang.String",
+      "sourceType": "com.xj.config.SoupConfig"
+    },
+    {
+      "name": "soup.tomato",
+      "type": "java.lang.String",
+      "sourceType": "com.xj.config.SoupConfig"
     }
   ],
   "hints": []
