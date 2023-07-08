@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>spring-demo-01-HelloWord</module>
+        <module>spring-Boot-demo-01-HelloWord</module>
         <module>spring-boot-demo-02-configurasion</module>
     </modules>
 
