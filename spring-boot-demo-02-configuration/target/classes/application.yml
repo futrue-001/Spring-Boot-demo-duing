@@ -1,0 +1,28 @@
+#层级写法(推荐使用) 不能使用 tab 进行缩进 只能使用 空格进行所经
+food:
+    meat: 大烤肉
+    rice: 炒饭
+
+spring:
+  profiles:
+#      通过active引用下面文档的 profiles id 内的配置信息
+      active: doc2
+
+#流式写法(不推荐)
+#food: { meat: 肉肉,rice: 蛋炒饭}
+
+---
+ # --- 表示一个文档的开始
+spring:
+  profiles: doc
+server:
+    port: 8085
+
+---
+# 一个文档的开始表示另一个文档的结束
+spring:
+  profiles: doc2
+server:
+    port: 8075
+
+

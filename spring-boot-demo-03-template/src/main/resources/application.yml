@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+
+spring:
+  mvc:
+    view:
+      #view 前缀 表示试图的位置(不能改变 默认为该位置 前后都要加 / )
+#      prefix: classpath:/templates/
+      #view 试图的后缀
+      suffix: .ftl
+#     static-path-pattern: /static/**
