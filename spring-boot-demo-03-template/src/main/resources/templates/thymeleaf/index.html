@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>thymeleaf 模板练习</title>
+    <style>
+        p{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--/*@thymesVar id="name" type="java.lang.String"*/-->
+    test01请求展示的数据:
+        <p th:text="${name}">test</p>
+    <hr>
+    test02请求展示的数据: 变量表达式${}
+        <!-- 普通的text 会将取出的数据 直接展示在该标签中 不会进行编译 -->
+        <p th:text="${element}">element</p>
+        <!-- 而 utext 会将 得到的标签 进行解析 最终展示到页面效果  -->
+        <p th:utext="${element}">element</p>
+    <hr>
+    test03请求展示的数据: 变量表达式 ${} 和 *{}
+<!--    <span th:object="${user}">-->
+<!--        <p th:text="*{name}"></p>-->
+<!--        <p th:text="*{sex}"></p>-->
+<!--        <p th:text="${user.nationality}"></p>-->
+<!--    </span>-->
+    <hr>
+    url链接表达式 @{}
+    <a th:href="@{/welcome}">welcome</a>
+    <hr>
+    消息表达式  #{} (引用properties文件内容)
+        <p th:text="#{name}">name</p>
+        <p th:text="#{age}">age</p>
+        <p th:text="#{sex}">sex</p>
+        <p th:text="#{aaa}"></p>
+        <p th:text="#{bbb}"></p>
+        <p th:text="#{ccc}"></p>
+</body>
+</html>

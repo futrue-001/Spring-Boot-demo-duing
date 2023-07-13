@@ -3,7 +3,16 @@ server:
 
 
 spring:
+  #配置 thymeleaf 的配置文件 位置 properties
+  messages:
+    # 表示properties文件的位置 如templates/thymeleaf/prop/test 框架会自动在后面添加.properties 所以测试时多次为成功
+    # 多个文件使用 , 进行分割 不添加路径表示根路径下的 properties(默认文件名为 massages。properties)
+    # 如果添加了basename 属性的配置 则默认根目录下 的massages文件会失效 需要在后面添加 messages 如下配置
+    basename: templates/thymeleaf/prop/test,messages
+    encoding: UTF-8
+
   mvc:
+    # 试图相关 配置
     view:
       #view 前缀 表示试图的位置(不能改变 默认为该位置 前后都要加 / )
 #      prefix: classpath:/templates/

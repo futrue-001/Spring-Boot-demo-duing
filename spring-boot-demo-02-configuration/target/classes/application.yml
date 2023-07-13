@@ -6,17 +6,18 @@ food:
 spring:
   profiles:
 #      通过active引用下面文档的 profiles id 内的配置信息
-      active: doc2
+      active: doc
 
 #流式写法(不推荐)
 #food: { meat: 肉肉,rice: 蛋炒饭}
 
 ---
- # --- 表示一个文档的开始
+ # --- 表示一个文档的开始 就可以减少配置文件的创建及读取
 spring:
   profiles: doc
+
 server:
-    port: 8085
+    port: 8080
 
 ---
 # 一个文档的开始表示另一个文档的结束
