@@ -23,11 +23,6 @@ public class FTLController {
         return md;
     }
 
-    @RequestMapping("/aa")
-    public String test1(){
-        return "index";
-    }
-
     @RequestMapping("/test")
     @ResponseBody
     public String test2(){
