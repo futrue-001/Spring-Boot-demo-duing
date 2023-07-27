@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/springDemo
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    #自动创建|更新|验证数据库表结构
+    hibernate:
+      ddl-auto: update
+    #设置数据库引擎为InnoDB
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
