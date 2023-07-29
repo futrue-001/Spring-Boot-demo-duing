@@ -17,4 +17,14 @@ public class GuestServiceImpl implements GuestService {
     public List<Guest> getList() {
         return guestDao.getList();
     }
+
+    @Override
+    public Guest selectGuestByID(Integer id) {
+        return guestDao.selectGuestById(id);
+    }
+
+    @Override
+    public void update(Guest guest) {
+        guestDao.update(guest);
+    }
 }

@@ -5,4 +5,12 @@
     <select id="getList" resultType="com.xj.domain.Guest" >
         select id,name,role from guest ;
     </select>
+
+    <select id="selectGuestById" resultType="com.xj.domain.Guest">
+        select id,name,role from guest where id = #{id} ;
+    </select>
+
+    <update id="update" >
+        update guest set role = #{role} where id = #{id}
+    </update>
 </mapper>

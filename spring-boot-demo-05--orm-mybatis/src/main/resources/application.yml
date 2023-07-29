@@ -7,7 +7,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: root
-mybatis:
+#mybatis:
 
   #指定实体类的位置
 #  type-aliases-package: com.xj.bean
@@ -16,4 +16,4 @@ mybatis:
 #  mapper-locations: classpath:mybatis/mapper/GuestMapper.xml
 
   #指定mybatis配置文件位置
-  config-location: classpath:mybatis-config.xml
+#  config-location: classpath:mybatis-config.xml
