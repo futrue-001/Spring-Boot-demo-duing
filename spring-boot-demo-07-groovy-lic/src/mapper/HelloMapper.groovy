@@ -9,4 +9,5 @@ import org.apache.ibatis.annotations.Select
 interface HelloMapper {
     @Select("select * from student")
     List<Student> studentList();
+
 }

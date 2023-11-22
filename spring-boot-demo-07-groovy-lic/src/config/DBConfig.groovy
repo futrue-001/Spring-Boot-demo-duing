@@ -1,8 +1,10 @@
 package config
 
+import mapper.HelloMapper
 import org.apache.ibatis.session.SqlSessionFactory
 import org.mybatis.spring.SqlSessionFactoryBean
 import org.mybatis.spring.SqlSessionTemplate
+import org.mybatis.spring.annotation.MapperScan
 import org.mybatis.spring.mapper.MapperScannerConfigurer
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
@@ -11,6 +13,7 @@ import com.alibaba.druid.pool.DruidDataSource;
 import javax.sql.DataSource
 
 @Configuration
+@MapperScan(basePackageClasses = HelloMapper.class)
 class DBConfig {
 
     @Bean

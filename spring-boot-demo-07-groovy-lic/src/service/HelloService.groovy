@@ -9,10 +9,10 @@ import org.springframework.stereotype.Service
 class HelloService {
 
     @Autowired
-    HelloMapper mapper;
+    private HelloMapper mapper;
 
     void sout() {
-       def list =  mapper.studentList();
+        def list =  mapper.studentList();
         println(list)
         println("acacacac")
     }
